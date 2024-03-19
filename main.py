@@ -2,6 +2,7 @@ import os
 import time
 
 from aufgabe_1 import aufgabe_1
+from aufgabe_2 import aufgabe_2
 
 aufgaben_not_solved: list = ['Aufgabe 1', 'Aufgabe 2', 'Aufgabe 3']
 
@@ -35,6 +36,10 @@ if __name__ == '__main__':
                 aufgaben_not_solved.remove('Aufgabe 1')
             os.system('cls')  # Clear CMD
         elif selected_task == str(2):
-            print("A2 TODO")
+            os.system('cls')
+            solved = aufgabe_2()
+            if solved:
+                aufgaben_not_solved.remove('Aufgabe 2')
+            os.system('cls')  # Clear CMD
         else:
             print("Rly??? 1-5, ist das sooo schwer?")
