@@ -3,6 +3,7 @@ import time
 
 from aufgabe_1 import aufgabe_1
 from aufgabe_2 import aufgabe_2
+from aufgabe_3 import aufgabe_3
 
 aufgaben_not_solved: list = ['Aufgabe 1', 'Aufgabe 2', 'Aufgabe 3']
 
@@ -24,7 +25,7 @@ def intro() -> None:
 if __name__ == '__main__':
     intro()
 
-    while aufgaben_not_solved != []:
+    while aufgaben_not_solved:
         for aufgabe in aufgaben_not_solved:
             print(aufgabe + '\n')
         print('Welche Aufgabe solls sein? ')
@@ -40,6 +41,12 @@ if __name__ == '__main__':
             solved = aufgabe_2()
             if solved:
                 aufgaben_not_solved.remove('Aufgabe 2')
+            os.system('cls')  # Clear CMD
+        elif selected_task == str(3):
+            os.system('cls')
+            solved = aufgabe_3()
+            if solved:
+                aufgaben_not_solved.remove('Aufgabe 3')
             os.system('cls')  # Clear CMD
         else:
             print("Rly??? 1-5, ist das sooo schwer?")

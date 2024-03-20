@@ -1,9 +1,9 @@
 import time
 
-def aufgabe_2():
+def aufgabe_3():
     # Aufgabenstellung
-    print(f'Aufgabe 2 wird nicht so einfach wie die erste\n'
-          f'Wo war dein größter doppelter "Absturz"?\n'
+    print(f'Aufgabe 3 es geht wieder um einen Ort.\n'
+          f'Wo bist du nochmal mit einem, im wahrsten Sinne, blaune Auge davon gekommen?\n'
           f'Falls du einen Tipp brauchst tippe "hint" ein oder "exit" um eine andere Aufgabe zu machen!')
     solution = None
     solved = False
@@ -11,9 +11,9 @@ def aufgabe_2():
     while True:
         print(f'Lösung bitte: ', end='')
         solution = input()
-        if solution == 'heidelberg' or solution == 'Heidelberg':  # Erste if condtion immer richtige Antwort
+        if solution == 'baggersee' or solution == 'Baggersee':  # Erste if condtion immer richtige Antwort
             print('')
-            print('Die zweite au richtig! Beeindruckend!')
+            print('Du bist einfach eine Rätsellegende!')
             print('')
             print('Drück Enter damit wir weiter machen können ;)')
             wait_for_eingabe = input()
@@ -22,8 +22,8 @@ def aufgabe_2():
             break
         elif solution == 'hint':  # Hint Case
             print('')
-            print(f'Du brauchst also einen Tipp... traurig...\n'
-                  f'Hint: apache\n')
+            print(f'Ein Tipp brauchst du also...\n'
+                  f'Hint: Es war warm, feucht, dunkel und dich hat ein aggressives Bierfass angegriffen!\n')
             continue
         elif solution == 'exit':
             print('')

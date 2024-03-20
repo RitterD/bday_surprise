@@ -13,17 +13,22 @@ def aufgabe_1():
     while True:
         print(f'Lösung bitte: ', end='')
         solution = input()
-        if solution == 'schweineleder':  # Erste if condtion immer richtige Antwort
+        if solution == 'schweineleder' or solution == 'Schweineleder':  # Erste if condtion immer richtige Antwort
+            print('')
             print('Sehr gut sehr gut Manneli, immer weiter so!!')
-            time.sleep(3)
+            print('')
+            print('Drück Enter damit wir weiter machen können ;)')
+            wait_for_eingabe = input()
             # Hier Antwort in config file schreiben
             solved = True
             break
         elif solution == 'hint':  # Hint Case
+            print('')
             print(f'Du brauchst also einen Tipp... traurig...\n'
                   f'Hint: Oink Oink\n')
             continue
         elif solution == 'exit':
+            print('')
             print(f'Zu schwer was?... Naja dann gibts halt kein Geschenk für dich ¯\_(°.°)_/¯')
             time.sleep(3)
             solved = False
