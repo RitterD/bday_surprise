@@ -1,5 +1,6 @@
 import time
 
+
 def aufgabe_3():
     # Aufgabenstellung
     print(f'Aufgabe 3 es geht wieder um einen Ort.\n'

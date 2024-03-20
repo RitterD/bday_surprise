@@ -1,5 +1,6 @@
 import time
 
+
 def aufgabe_2():
     # Aufgabenstellung
     print(f'Aufgabe 2 wird nicht so einfach wie die erste\n'
