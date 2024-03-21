@@ -29,19 +29,19 @@ if __name__ == '__main__':
             print(aufgabe + '\n')
         print('Welche Aufgabe solls sein? ')
         selected_task = input()
-        if selected_task == str(1):
+        if selected_task == str(1) or 'Aufgabe 1' or 'aufgabe 1':
             os.system('cls')  # Clear CMD
             solved = aufgabe_1()
             if solved:
                 aufgaben_not_solved.remove('Aufgabe 1')
             os.system('cls')  # Clear CMD
-        elif selected_task == str(2):
+        elif selected_task == str(2) or 'Aufgabe 2' or 'aufgabe 2':
             os.system('cls')
             solved = aufgabe_2()
             if solved:
                 aufgaben_not_solved.remove('Aufgabe 2')
             os.system('cls')  # Clear CMD
-        elif selected_task == str(3):
+        elif selected_task == str(3) or 'Aufgabe 3' or 'aufgabe 3':
             os.system('cls')
             solved = aufgabe_3()
             if solved:
