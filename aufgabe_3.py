@@ -18,7 +18,6 @@ def aufgabe_3():
             print('')
             print('Drück Enter damit wir weiter machen können ;)')
             wait_for_eingabe = input()
-            # Hier Antwort in config file schreiben
             solved = True
             break
         elif solution == 'hint':  # Hint Case
