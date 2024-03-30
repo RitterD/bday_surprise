@@ -46,8 +46,8 @@
           justify-content: center;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#090909)), url("/assets/images/background.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0), #090909), url("/assets/images/background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#090909)), url("./assets/images/background.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #090909), url("./assets/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
