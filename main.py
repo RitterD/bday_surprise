@@ -1,5 +1,7 @@
 import os
 import time
+import codecs
+import webbrowser
 import socket
 from aufgabe_1 import aufgabe_1
 from aufgabe_2 import aufgabe_2
@@ -46,6 +48,7 @@ def outro() -> None:
 
 
 if __name__ == '__main__':
+
     intro()
 
     while aufgaben_not_solved:
@@ -81,6 +84,10 @@ if __name__ == '__main__':
             print(
                 "Rly??? also wenns schon daran scheitert eine Zahl von 1-4 einzugeben brauchen wir hier gar nicht weitermachen....")
     outro()
+    f = open("ui/index.html", 'r')
+    filename = 'file:///' + os.getcwd() + '/' + 'ui/index.html'
+    webbrowser.open_new_tab(filename)
+    f.read()
     s_ = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     while True:
         s_.sendto(msg, ('192.168.178.99', 5555))
