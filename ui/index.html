@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <p class="warning">scan warning: SPICED MEAT AND HAM</p>
+        <p class="legal">© monty python</p>
+        <img class="anonymous" src="assets/images/anonymous.svg" alt="">
+
+        <div class="container" id="input">
+            <div class="header">
+                <div class="header-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="header-container">
+                </div>
+                
+                
+            </div>
+            <div class="input">
+                <label for="hostIP">HOST IP</label>
+                <input type="text" id="hostIP">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <button class="" onclick="send()">Connect</button>
+            </div>
+            
+        </div>
+        <div class="overlay" id="overlay">
+            <img class="loader" width="500px" src="assets/images/my-loader.svg" alt="">
+        </div>
+        </div>
+        <div class="container" id="diashow">
+            <img class="diashow-img" id="img_1" src="assets/diashow/1.jpg" alt="">
+            <img class="diashow-img" id="img_2" src="assets/diashow/14.jpeg" alt="">
+            <img class="diashow-img" id="img_3" src="assets/diashow/16.jpg" alt="">
+            <img class="diashow-img" id="img_4" src="assets/diashow/4.JPG" alt="">
+            <img class="diashow-img" id="img_5" src="assets/diashow/5.JPG" alt="">
+            <img class="diashow-img" id="img_6" src="assets/diashow/6.jpg" alt="">
+            <img class="diashow-img" id="img_7" src="assets/diashow/9.jpg" alt="">
+            <img class="diashow-img" id="img_8" src="assets/diashow/10.jpeg" alt="">
+            <img class="diashow-img" id="img_9" src="assets/diashow/12.jpeg" alt="">
+            <img class="diashow-img" id="img_10" src="assets/diashow/13.jpeg" alt="">
+        </div> 
+    </div> 
+</body>
+
+<audio id="audioPlayer" src="assets/audio/voice_end2.mp3"></audio>
+<audio id="musicPlayer" src="assets/audio/journey.mp3"></audio>
+<script src="script.js"></script>
+</html>

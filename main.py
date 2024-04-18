@@ -33,6 +33,7 @@ def intro() -> None:
 
 
 def outro() -> None:
+    file_path = os.path.abspath("ui/index.html")
     outro_str = str(f'Du hast es geschafft!! '
                     f'Du bist wohl einfach viel schlauer und deutlich attraktiver als die Hacker\n'
                     f'Jetzt ist es soweit, hier kommt dein Geschenk!!!\n'
@@ -41,6 +42,7 @@ def outro() -> None:
                     f'Oh no! Die Hacker versenden gerade deinen Benutzernamen und dein Passwort per UDP!!\n'
                     f'Schnell öffne den Browser und Wireshark und log dich ein um sie aufzuhalten!!!')
     print_slow(outro_str)
+    os.system("start " + file_path)
 
 
 if __name__ == '__main__':
