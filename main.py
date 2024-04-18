@@ -1,12 +1,13 @@
 import os
 import time
-
+import socket
 from aufgabe_1 import aufgabe_1
 from aufgabe_2 import aufgabe_2
 from aufgabe_3 import aufgabe_3
 from aufgabe_4 import aufgabe_4
 
 aufgaben_not_solved: list = ['Aufgabe 1', 'Aufgabe 2', 'Aufgabe 3', 'Aufgabe 4']
+msg: bytes = b'User: Hackerman, PW: Alles_gute_zum_30'
 
 
 def print_slow(text: str) -> None:
@@ -33,12 +34,12 @@ def intro() -> None:
 
 def outro() -> None:
     outro_str = str(f'Du hast es geschafft!! '
-                   f'Du bist wohl einfach viel schlauer und deutlich attraktiver als die Hacker\n'
-                   f'Jetzt ist es soweit, hier kommt dein Geschenk!!!\n'
-                   f'.......\n'
-                   f'.......\n'
-                   f'Oh no! Die Hacker versenden gerade deinen Benutzernamen und dein Passwort per UDP!!\n'
-                   f'Schnell öffne den Browser und Wireshark und log dich ein um sie aufzuhalten!!!')
+                    f'Du bist wohl einfach viel schlauer und deutlich attraktiver als die Hacker\n'
+                    f'Jetzt ist es soweit, hier kommt dein Geschenk!!!\n'
+                    f'.......\n'
+                    f'.......\n'
+                    f'Oh no! Die Hacker versenden gerade deinen Benutzernamen und dein Passwort per UDP!!\n'
+                    f'Schnell öffne den Browser und Wireshark und log dich ein um sie aufzuhalten!!!')
     print_slow(outro_str)
 
 
@@ -78,4 +79,7 @@ if __name__ == '__main__':
             print(
                 "Rly??? also wenns schon daran scheitert eine Zahl von 1-4 einzugeben brauchen wir hier gar nicht weitermachen....")
     outro()
-    # TODO: UDP Socket mit sende loop für Benutzername und PW
+    s_ = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    while True:
+        s_.sendto(msg, ('192.168.178.99', 5555))
+        time.sleep(0.01)
