@@ -25,7 +25,7 @@ def print_slow(text: str) -> None:
 def intro() -> None:
     intro_str = str(f'Alles gute zum 30. Geburtstag Manu!!\n'
                     f'Bleib so wie du bist und vor allem gesund und uns noch lange erhalten.\n'
-                    f'Jezt wollen wir dich aber ncht mehr weiter auf die Folter spannen!!\n'
+                    f'Jezt wollen wir dich aber nicht mehr weiter auf die Folter spannen!!\n'
                     f'Hier kommt dein Geschenk!!!\n'
                     f'...\n'
                     f'...\n'
