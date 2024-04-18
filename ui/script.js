@@ -24,8 +24,8 @@ function send(){
     const inputHost = document.getElementById("hostIP").value;
     const inputPassword = document.getElementById("password").value;
 
-    const host = "host";
-    const password = "password";
+    const host = "Hackerman";
+    const password = "Alles_gute_zum_30";
 
     const imgIds = ["img_1", "img_2", "img_3", "img_4", "img_5", "img_6", "img_7", "img_8", "img_9", "img_10"];
 
