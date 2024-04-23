@@ -42,7 +42,7 @@ def outro() -> None:
                     f'.......\n'
                     f'.......\n'
                     f'Oh no! Die Hacker versenden gerade deinen Benutzernamen und dein Passwort per UDP!!\n'
-                    f'Schnell öffne den Browser und Wireshark und log dich ein um sie aufzuhalten!!!')
+                    f'Schnell öffne Wireshark und log dich vor ihnen in das Interface ein um sie aufzuhalten!!!')
     print_slow(outro_str)
     os.system("start " + file_path)
 
@@ -90,5 +90,5 @@ if __name__ == '__main__':
     f.read()
     s_ = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     while True:
-        s_.sendto(msg, ('192.168.178.99', 5555))
+        s_.sendto(msg, ('127.0.0.1', 5555))
         time.sleep(0.01)
